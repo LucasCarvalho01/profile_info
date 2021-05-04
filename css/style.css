@@ -115,7 +115,7 @@ ul {
   margin-top: .4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .container {
     background-size: auto;
     background-position: -14rem -32rem, right -14rem bottom -32rem;
@@ -127,5 +127,20 @@ ul {
 
   .profile-img img {
     top: clamp(1rem, 5vh, 4rem);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    min-width: 350px;
+  }
+
+  .container {
+    /* background-size: auto; */
+    background-position: -24rem -32rem, right -24rem bottom -32rem;
+  }
+
+  .profile-img img {
+    top: clamp(1rem, 5vh, 3rem);
   }
 }
